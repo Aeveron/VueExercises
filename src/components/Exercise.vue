@@ -3,6 +3,8 @@
   <div class="exercise">
     <button @click="nextpage()">Second Page</button>
     <button @click="nextpage2()">Third Page</button>
+    <button @click="nextpage3()">Fourth Page</button>
+     <button @click="nextpage4()">GAME</button>
     <p>{{ name }} ({{ age }})</p>
     <p>{{age *3 }}</p>
     <p>{{ mathss()}}</p>
@@ -51,6 +53,12 @@ export default {
     },
     nextpage2: function(){
       this.$router.push('Thirdpage');
+    },
+    nextpage3: function(){
+      this.$router.push('Arraystuff');
+    },
+     nextpage4: function(){
+      this.$router.push('Game');
     }
   }
 };
