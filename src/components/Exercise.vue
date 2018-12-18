@@ -5,6 +5,8 @@
     <button @click="nextpage2()">Third Page</button>
     <button @click="nextpage3()">Fourth Page</button>
      <button @click="nextpage4()">GAME</button>
+     <button @click="nextpage5()">mPesa Page</button>
+     <button @click="nextpage6()">Lill June</button>
     <p>{{ name }} ({{ age }})</p>
     <p>{{age *3 }}</p>
     <p>{{ mathss()}}</p>
@@ -59,6 +61,12 @@ export default {
     },
      nextpage4: function(){
       this.$router.push('Game');
+    },
+     nextpage5: function(){
+      this.$router.push('mPesaTest');
+    },
+      nextpage6: function(){
+      this.$router.push('lilljune');
     }
   }
 };
