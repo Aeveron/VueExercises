@@ -14,7 +14,7 @@
       <input type="text" v-bind:value="name">
     </div>
     <div>
-      <img v-bind:src="picss" style="width: 100px; height: 100px;">
+      <img v-bind:src="picss" style="width: 200px; height: 200px;">
     </div>
     <div>
       <button v-on:click="clickme">Show Alert</button>
