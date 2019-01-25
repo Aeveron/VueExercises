@@ -22,7 +22,7 @@
       <ul>
         <li v-for="value in testData">         
           <template v-if="Array.isArray(value)">
-          <div v-for="element in value"> {{ element }}</div>
+          <div v-for="element in value" :key="element"> {{ element }}</div>
           </template>
           <template v-else>
             {{ value }}

@@ -1,12 +1,19 @@
 <template>
-  <div id="app">
+  <div>
+
     <router-view/>
   </div>
 </template>
 
 <script>
-/*eslint-disable */
+
+
+
 export default {
-  name: 'App'
+  data: function(){
+    return{
+
+    }
+  },
 }
 </script>

@@ -5,7 +5,7 @@ import Secondpage from '@/components/Secondpage'
 import Thirdpage from '@/components/Thirdpage'
 import Arraystuff from '@/components/Arraystuff'
 import Game from '@/components/Game'
-import mPesaTest from '@/components/mPesaTest'
+import DirectiveTest from '@/components/DirectiveTest'
 import lilljune from '@/components/lilljune'
 
 Vue.use(Router)
@@ -38,9 +38,9 @@ export default new Router({
       component: Game
     },
     {
-      path: '/mPesaTest',
-      name: 'mPesaTest',
-      component: mPesaTest
+      path: '/DirectiveTest',
+      name: 'DirectiveTest',
+      component: DirectiveTest
     },
     {
       path: '/lilljune',
@@ -49,4 +49,3 @@ export default new Router({
     }
   ]
 })
-
