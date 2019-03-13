@@ -8,6 +8,7 @@
      <button @click="nextpage5()">Directive Test</button>
      <button @click="nextpage6()">Lill June</button>
      <button @click="nextpage7()">Quotes</button>
+     <button @click="nextpage8()">Mixins</button>
     <p>{{ name }} ({{ age }})</p>
     <p>{{age *3 }}</p>
     <p>{{ mathss()}}</p>
@@ -71,6 +72,9 @@ export default {
     },
      nextpage7: function(){
       this.$router.push('Quotes');
+    },
+    nextpage8: function(){
+      this.$router.push('Mixins');
     }
   }
 };
