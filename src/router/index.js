@@ -7,12 +7,10 @@ import Arraystuff from '@/components/Arraystuff'
 import Game from '@/components/Game'
 import DirectiveTest from '@/components/DirectiveTest'
 import lilljune from '@/components/lilljune'
-import Mixins from '@/components/Mixins'
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   routes: [
     {
       path: '/',
@@ -48,11 +46,6 @@ export default new Router({
       path: '/lilljune',
       name: 'lilljune',
       component: lilljune
-    },
-    {
-      path: '/Mixins',
-      name: 'Mixins',
-      component: Mixins
     }
   ]
 })

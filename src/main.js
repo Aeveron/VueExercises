@@ -8,10 +8,6 @@ import router from './router'
 // import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // Vue.use(BootstrapVue)
-Vue.filter('calculateLength', (value) => {
-  return value + ' (' + value.length + ')';
-});
-
 Vue.directive('highlight', {
   bind(el, binding, vnode) {
     if (binding.arg == 'background') {
