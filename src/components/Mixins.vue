@@ -1,3 +1,4 @@
+
 <template>
   <div class="container">
     <button @click="back">BACK</button>
@@ -17,29 +18,29 @@
 <script>
 import { lengthAwareMixin } from './lengthAwareMixin'
 export default {
-    mixins: [lengthAwareMixin],
-    data (){
-        return{
-            firstText: 'Some Text',
-            secondText: 'Sondre'
-        }
-    },
-      filters: {
-    reverse(value) {
-      return value.split("").reverse().join("");
+  mixins: [lengthAwareMixin],
+  data () {
+    return {
+      firstText: 'Some Text',
+      secondText: 'Sondre'
+    }
+  },
+  filters: {
+    reverse (value) {
+      return value.split('').reverse().join('')
     }
   },
   methods: {
-    back: function() {
-      this.$router.push("/");
+    back: function () {
+      this.$router.push('/')
     }
   },
   computed: {
-      reversed(){
-          return this.firstText.split("").reverse().join("");
+    reversed () {
+      return this.firstText.split('').reverse().join('')
       }
   }
-};
+}
 </script>
 
 <style>
